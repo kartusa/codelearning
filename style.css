@@ -9,9 +9,28 @@ text-decoration: none;
 color: pink;
 }
 
+.current {
+    font-weight: bold;
+}
+
 * {
 padding: 0;
 margin: 0;
+box-sizing: border-box;
+}
+
+main {
+    padding: 2em 5%;
+}
+
+p {
+    margin-top: 1em;
+}
+
+footer {
+    padding: 1em;
+    background: #000;
+    color: #fff;
 }
 
 .row {
@@ -21,10 +40,12 @@ margin: 0 auto;
 }
 
 header {
-background: #fff;
-color: #000;
+background: #494949;
+color: #fff;
 padding: 20px;
 display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 header ul li {
@@ -73,4 +94,8 @@ margin-left: 1em;
 
 li {
     padding-bottom: 0.3em;
+}
+
+.nick {
+    font-style: italic;
 }
