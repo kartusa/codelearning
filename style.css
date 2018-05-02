@@ -30,9 +30,11 @@ p {
 }
 
 footer {
-    padding: 1em;
+    padding: 20px;
     background: #000;
     color: #fff;
+    clear: both;
+
 }
 
 .row {
@@ -86,7 +88,7 @@ margin-left: 1em;
 }
 
 .chess {
-    color: beige;
+    color: limegreen;
 }
 
 #best {
@@ -146,7 +148,7 @@ img {
 }
 
 .clearboth {
-    clear: botth;
+    clear: both;
 }
 
 .aligncenter {
@@ -208,13 +210,28 @@ section .content {
     box-shadow: 0 6px 6px -4px rgba(0,0,0,0.2);
 }
 
-.red {
-    background: red;
+.violet {
+    background: #ea80fc;
     color: black;
 }
 
-.white .row2 {
+.row2 {
     column-count: 2;
     column-gap: 2rem;
     max-width: unset;
+}
+
+.content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.padding10 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.larger {
+    font-size: 1.5em;
 }
