@@ -21,6 +21,8 @@ box-sizing: border-box;
 
 main {
     padding: 2em 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p {
@@ -55,7 +57,7 @@ margin-left: 1em;
 }
 
 .strategy {
-    color: greenyellow;
+    color: green;
 }
 
 .logic {
@@ -88,8 +90,8 @@ margin-left: 1em;
 }
 
 #best {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 li {
@@ -98,4 +100,115 @@ li {
 
 .nick {
     font-style: italic;
+}
+
+#content {
+    background: #fff;
+    color: #222;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%;
+}
+
+#content, aside {
+    padding: 2rem;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+aside {
+    background: #ccc;
+    color: #000;
+    min-width: calc(250px - 4rem);
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clear {
+    clear: right;
+}
+
+.clearboth {
+    clear: botth;
+}
+
+.aligncenter {
+    display: block;
+    margin: 1em auto;
+}
+
+
+/* One page layout */
+
+#one-page main {
+    display: block;
+    padding: 0;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+#one-page main section {
+    padding: 5rem 5%;
+}
+
+#one-page section h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#hello .content {
+    column-count: 3;
+    column-gap: 2rem;
+    max-width: unset;
+}
+
+section .content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#one-page {
+    padding-top: 74px;
+}
+
+#one-page header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 6px 6px -4px rgba(0,0,0,0.2);
+}
+
+.red {
+    background: red;
+    color: black;
 }
