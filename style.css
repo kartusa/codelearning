@@ -275,9 +275,8 @@ img {
 
 .background {
     position: relative;
-    background-size: auto 100%;
+    background-size: covers;
     color: white;
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background-attachment: fixed;
@@ -305,6 +304,7 @@ img {
 
 .background-content {
     position: relative;
+    max-width: 1200px;
 }
 
 @media screen and (max-width: 800px) {
