@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i|Roboto+Mono:400,400i,600&subset=latin-ext');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #37474f;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 1.1rem;
+}
+h3 {
+    padding-bottom: 1rem;
+}
+.main {
+    background: #102027;
+    padding: 0.5em 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    padding: 1rem;
+}
+
+.content {
+    background: #62727b;
+    padding: 0.5em 1%;
+    display: flex;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.photo {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 37%;
+    
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.alignboth {
+    clear: both;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.photo, .info, .experience, .edu {
+    padding: 1rem;
+}
+
+.info {
+    border: 2px solid red;
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 27%;
+    margin-left: 1rem;
+    /* display: flex; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 0.3rem;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    padding-right: 2rem;
+}
+
+.summary {
+    display: flex;
+}
+
+.left {
+    min-width: 20%;
+    padding-right: 1.5em;
+}
