@@ -81,6 +81,10 @@ img {
     padding: 1rem;
 }
 
+.lang, .skills {
+    padding: 1rem 0 1rem 0;
+}
+
 .info {
     border: 2px solid red;
     border-radius: 10px;
@@ -91,11 +95,11 @@ img {
     /* display: flex; */
 }
 
-ul {
+ul.contactList {
     list-style-type: none;
 }
 
-li {
+ul.contactList > li {
     padding-bottom: 0.3rem;
 }
 a {
@@ -120,3 +124,68 @@ h3 {
     min-width: 20%;
     padding-right: 1.5em;
 }
+
+.experience {
+    width: 100%;
+}
+
+.pkch {
+    padding-left: 1rem;
+}
+
+.content > div {
+    flex: 0 0 50%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.data {
+    /* padding-top: 1rem; */
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 1.3em;
+    padding-bottom: 0.5rem;
+    padding-left: 1em;
+}
+
+h5 {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+
+.list {
+    list-style-type: none
+}
+
+.uni {
+    text-align: left;
+    padding-left: 1.1rem;
+}
+
+hr { 
+    border: 0; 
+    height: 30px; 
+    border-style: solid; 
+    border-color: #fff; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+  } 
+  hr:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #fff; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+  }
+
+  .last {
+      padding-bottom: 1.5rem;
+  }
+
+ 
