@@ -41,8 +41,8 @@ div {
     background: #62727b;
     padding: 0.5em 1%;
     display: flex;
-    border: 2px solid red;
-    border-radius: 5px;
+    /* border: 2px solid red;
+    border-radius: 5px; */
 }
 
 img {
@@ -52,8 +52,8 @@ img {
 }
 
 .photo {
-    border: 2px solid red;
-    border-radius: 10px;
+    /* border: 2px solid red;
+    border-radius: 10px; */
     padding: 0.5rem;
     width: 37%;
     
@@ -86,8 +86,8 @@ img {
 }
 
 .info {
-    border: 2px solid red;
-    border-radius: 10px;
+    /* border: 2px solid red;
+    border-radius: 10px; */
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 27%;
@@ -122,7 +122,7 @@ h3 {
 
 .left {
     min-width: 20%;
-    padding-right: 1.5em;
+    /* padding-right: 1.5em; */
 }
 
 .experience {
@@ -188,4 +188,59 @@ hr {
       padding-bottom: 1.5rem;
   }
 
- 
+ .szk {
+     padding-top: 1rem;
+ }
+
+ footer {
+     padding: 1rem 1% 1rem 1%;
+     /* border: 2px solid red;
+     border-radius: 5px; */
+     text-align: center;
+ }
+
+ .liHobby {
+     padding-right: 1rem;
+     padding-left: 2rem;
+ }
+
+ .hHobby {
+     padding-bottom: 0.5rem;
+ }
+
+ .space {
+     padding-right: 1rem;
+ }
+
+ /* Flaired edges, by Tomas Theunissen */
+
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.hobby hr.transp {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.hobby {
+    background: #62727b;
+    padding: 0.5em 1%;
+    display: flex;
+}
