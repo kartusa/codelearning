@@ -212,17 +212,16 @@ hr {
      padding-right: 1rem;
  }
 
- /* Flaired edges, by Tomas Theunissen */
-
 hr.style-seven {
-    overflow: visible; /* For IE */
+    overflow: visible;
     height: 30px;
     border-style: solid;
     border-color: white;
     border-width: 1px 0 0 0;
     border-radius: 20px;
 }
-hr.style-seven:before { /* Not really supposed to work, but does */
+
+hr.style-seven:before { 
     display: block;
     content: "";
     height: 30px;
@@ -244,3 +243,67 @@ hr.style-seven:before { /* Not really supposed to work, but does */
     padding: 0.5em 1%;
     display: flex;
 }
+
+@media print {
+    a:after {
+        content: " (" attr(href) ")";
+    }
+
+    body {
+        color: black;
+        margin: 1rem;
+        /* white-space: nowrap; */
+    }
+    
+    a {
+        color: black;
+    }
+
+    div.photo > h2 {
+        display: none
+    }
+    
+    div.info {
+        display: flex;
+    }
+
+    div.summary {
+        top: 2rem;
+        left: 30%;
+        position: absolute;
+        text-align: right;
+    }
+
+    div.contact {
+        top: 0;
+        position: relative;
+        left: 0;
+    }
+
+    div.summary > p {
+        text-align: left;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content > div {
+        flex: 0 0 100%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+   footer {
+       bottom: 0;  
+   }
+   
+   .last {
+       padding-bottom: 0;
+       margin-bottom: 0;
+   }
+   
+   hr {
+       display: none;
+   }
+}
+
